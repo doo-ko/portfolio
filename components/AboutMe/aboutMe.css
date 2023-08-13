@@ -1,0 +1,67 @@
+.aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+
+  .aboutMeDetail {
+    max-width: 400px;
+    margin-right: 32px;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(transparent 70% , #EBBF9A 70%);
+  }
+  
+  .workDetail {
+    position: relative;
+    max-width: 400px;
+    margin-top: 32px;
+    padding: 1.8em 1.5em 1em 1.5em;
+    border: 2px solid #eebf9a;
+  }
+
+  .workDetail > .subTitle {
+      position: absolute;
+      top: -1.15em;
+      left: -.5em;
+      text-align: center;
+      padding: .4em 1.4em;
+      border-radius: 25px;
+      background-color: #eebf9a;
+      color: #fff;
+      font-size: .9em;
+  }
+
+  .workDetail > .subTitle::before {
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 8px;
+      background-color: #eebf9a;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      content: '';
+  }
+
+  .workDetailDetail + .workDetailDetail {
+    margin-top: 8px;
+  }
+  
+  @media screen and (max-width: 880px) {
+    .aboutMeDetail {
+      margin-right: 0px;
+    }
+
+    .profileImageContent {
+      margin-top: 16px;
+    }
+  }
+}
+
+
+

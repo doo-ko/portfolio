@@ -1,0 +1,28 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+
+  .title {
+    width: 120px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(transparent 70% , #EBBF9A 70%);
+  }
+  
+  .skillmapImageContent {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skillmapImage {
+    width: 80%;
+    height: auto;
+  }
+}
+
+

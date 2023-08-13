@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 25px 10px 10px;
+  background-color: #ebbf9a;
+  color: #fff;
+
+  .footerList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .copyright {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
