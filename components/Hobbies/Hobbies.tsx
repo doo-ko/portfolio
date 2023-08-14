@@ -14,11 +14,13 @@ export const Hobbies: React.FC = () => {
         <div className="hobbieList">
           <div className='subTitle'>Hobbies</div>
           <ul>
-            <li>
-              <span>2Dモデリング<br></br>Live2Dを使用し、Vtuberのイラストに、瞬きや口の動きを付ける</span>
+            <li className='list'>
+              2Dモデリング<br></br>
+              <span className='hobbieListText'>Live2Dを使用し、Vtuberのイラストに、瞬きや口の動きを付ける</span>
             </li>
-            <li >
-              <span >3Dモデリング<br></br>blenderを使用し、3次元空間にオブジェクトを作成したりする※写真参照</span>
+            <li className='list'>
+              3Dモデリング<br></br>
+              <span className='hobbieListText'>blenderを使用し、3次元空間にオブジェクトを作成したりする※写真参照</span>
             </li>
           </ul>
         </div>

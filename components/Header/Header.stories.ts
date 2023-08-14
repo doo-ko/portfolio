@@ -1,3 +1,6 @@
+"use client";
+import { useState } from 'react'
+
 import type { Meta, StoryObj } from '@storybook/react';
 import { Header } from './Header';
 
@@ -15,11 +18,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+const tabList = ['AboutMe', 'Achievements', 'Skills', 'Hobbies'];
+const [activeTab, setActiveTab] = useState(tabList[0]);
+
 export const Default: Story = {
-  args: {
-    user: {
-      name: 'Jane Doe',
-    },
-  },
+  args: { tabList, activeTab, setActiveTab },
 };
 

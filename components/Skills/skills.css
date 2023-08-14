@@ -14,9 +14,12 @@
   }
   
   .skillmapImageContent {
-    width: 80%;
     display: flex;
     justify-content: center;
+    border: 2px solid #eebf9a;
+    width: 80%;
+    max-width: 840px;
+    margin-top: 16px;
   }
 
   .skillmapImage {

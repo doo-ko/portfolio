@@ -8,17 +8,23 @@ export const AboutMe: React.FC = () => {
   return (
     <section className='aboutMe' id='AboutMe'>
       <div className='aboutMeDetail'>
-        <p className='title'><span>About</span>Me</p>
-        <p>遠藤 想（ENDO KOKORO）</p>
-        <p>ニックネーム：えんどぅー</p>
+        <p className='title'>About Me</p>
+        <p className='myName'>遠藤 想（ENDO KOKORO）</p>
+        <p className='myName'>ニックネーム：えんどぅー</p>
         <div className='workDetail'>
           <div className='subTitle'>Works</div>
           <ul>
-            <li>
-              <span>大手ECサイトの社内で使用される、ストアや商品の違反報告を管理するツールの開発。</span>
+            <li className='list'>
+              大手ECサイトの社内ツールの改修（2020年7月～2021年9月）<br></br>
+              <span className='workDetailText'>ストアや商品の違反報告を管理するツールについて、独自のライブラリを使用して実装していた箇所をPHPの標準関数などに置き換える対応。
+              開発スキル：PHP（Laravel, CakePHP）</span>
             </li>
-            <li >
-              <span>大手ECサイトのフロントエンド開発を担当。<br></br>新規機能追加や機能改善、PHPからReactへのリプレースも担当。</span>
+            <li className='list'>
+              大手ECサイトのフロントエンド開発（2021年10月～現在）<br></br>
+              <span className='workDetailText'>ECサイトの機能追加や機能改善を行い、詳細設計・実装・試験・リリースまで担当。<br></br>
+              また、CakePHP, JQueryからNext.jsへのリプレースも担当し、ページを作成から経験あり。<br></br>
+              チーム内では、サブリーダー兼テックリードを担当しており、技術的相談を受けたり、ソースレビューを行っている。<br></br>
+              開発スキル：CakePHP, JQuery, Next.js, Docker, screwdriver, envoy</span>
             </li>
           </ul>
         </div>

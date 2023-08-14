@@ -10,4 +10,10 @@
 
 body {
   margin: 32px;
+  color: #4d4d4d;
+}
+
+.list {
+  list-style: disc;
+  margin: 1.5em 1em 1em 2.5em;
 }
