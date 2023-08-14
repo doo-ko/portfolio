@@ -21,9 +21,9 @@ export const AboutMe: React.FC = () => {
             </li>
             <li className='list'>
               大手ECサイトのフロントエンド開発（2021年10月～現在）<br></br>
-              <span className='workDetailText'>ECサイトの機能追加や機能改善を行い、詳細設計・実装・試験・リリースまで担当。<br></br>
+              <span className='workDetailText'>チーム内では、サブリーダー兼テックリードを担当しており、技術的相談を受けたり、ソースレビューを行っている。<br></br>
+              ECサイトの機能追加や機能改善を行い、詳細設計・実装・試験・リリースまで担当。<br></br>
               また、CakePHP, JQueryからNext.jsへのリプレースも担当し、ページを作成から経験あり。<br></br>
-              チーム内では、サブリーダー兼テックリードを担当しており、技術的相談を受けたり、ソースレビューを行っている。<br></br>
               開発スキル：CakePHP, JQuery, Next.js, Docker, screwdriver, envoy</span>
             </li>
           </ul>
