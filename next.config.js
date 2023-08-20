@@ -3,5 +3,6 @@ const nextConfig = {}
 
 module.exports = nextConfig
 module.exports = {
-    assetPrefix: '/portfolio',
-  }
+    basePath: process.env.GITHUB_PAGES ? '/portfolio' : '',
+    assetPrefix: process.env.GITHUB_PAGES ? '/portfolio' : '',
+}
