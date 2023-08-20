@@ -1,6 +1,3 @@
-"use client";
-import { useState } from 'react'
-
 import type { Meta, StoryObj } from '@storybook/react';
 import { Header } from './Header';
 
@@ -12,6 +9,9 @@ const meta = {
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
+    nextjs: {
+      appDirectory: true,
+    },
   },
 } satisfies Meta<typeof Header>;
 
@@ -19,7 +19,8 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const tabList = ['AboutMe', 'Achievements', 'Skills', 'Hobbies'];
-const [activeTab, setActiveTab] = useState(tabList[0]);
+const activeTab = 'AboutMe';
+function setActiveTab(tab: string): void { console.log('click' + {tab})};
 
 export const Default: Story = {
   args: { tabList, activeTab, setActiveTab },

@@ -6,7 +6,7 @@
   width: 100%;
   background: #fff;
   z-index: 1;
-  padding-top: 16px;
+  padding: 16px 32px;
 
   .tab {
     flex: 1 1;
@@ -20,11 +20,11 @@
     text-align: center;
     cursor: pointer;
   }
-  
+
   .tab:hover {
     opacity: .8;
   }
-  
+
   .tabContent__active {
     border-bottom: 4px solid #ebbf9a;
     color: #ebbf9a;
@@ -37,4 +37,3 @@
     }
   }
 }
-

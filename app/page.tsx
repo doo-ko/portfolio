@@ -9,15 +9,15 @@ import { Hobbies } from '@/components/Hobbies/Hobbies'
 import { Skills } from '@/components/Skills/Skills'
 
 export default function Home() {
-  const tabList = ['AboutMe', 'Achievements', 'Skills', 'Hobbies'];
+  const tabList = ['AboutMe', 'Skills', 'Achievements', 'Hobbies'];
   const [activeTab, setActiveTab] = useState(tabList[0]);
   return (
     <>
-      <Header tabList={tabList} activeTab={activeTab} setActiveTab={setActiveTab}/>
+      <Header tabList={tabList} activeTab={activeTab} setActiveTab={setActiveTab} />
       <main className="main">
         <AboutMe />
-        <Achievements />
         <Skills />
+        <Achievements />
         <Hobbies />
       </main>
       <Footer />

@@ -37,7 +37,7 @@ export const Achievements: React.FC = () => {
             <span className='achievementText'>...comming soon（今年9月から着手予定）</span>
           </li>
         </ul>
-        <div><Image src={thinking} alt='profile image' width={240} height={240}/></div>
+        <div><Image src={thinking} alt='profile image' width={240} height={240} /></div>
       </div>
     </section>
   );

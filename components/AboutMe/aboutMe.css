@@ -9,13 +9,13 @@
     max-width: 400px;
     margin-right: 32px;
   }
-  
+
   .title {
     font-size: 22px;
     font-weight: bold;
-    background: linear-gradient(transparent 70% , #EBBF9A 70%);
+    background: linear-gradient(transparent 70%, #EBBF9A 70%);
   }
-  
+
   .myName {
     margin-top: 8px;
     margin-left: 16px;
@@ -55,10 +55,10 @@
   .workDetailDetail + .workDetailDetail {
     margin-top: 8px;
   }
-  
+
   .workDetailText {
     font-size: 14px;
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   @media screen and (max-width: 880px) {
@@ -71,6 +71,3 @@
     }
   }
 }
-
-
-

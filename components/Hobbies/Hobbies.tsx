@@ -25,8 +25,8 @@ export const Hobbies: React.FC = () => {
           </ul>
         </div>
         <div className='hobbieImage'>
-          <Image src={house} alt='profile image' width={320} height={320}/>
-          <Image src={room} alt='profile image' width={320} height={320}/>
+          <Image src={house} alt='profile image' width={320} height={320} />
+          <Image src={room} alt='profile image' width={320} height={320} />
         </div>
       </div>
     </section>

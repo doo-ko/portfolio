@@ -7,27 +7,27 @@ import './header.css';
 type HeaderProps = {
   tabList: string[];
   activeTab: string;
-  setActiveTab:(tab: string)=>void;
+  setActiveTab: (tab: string) => void;
 }
 
-export const Header = ({ tabList, activeTab, setActiveTab}: HeaderProps) => {
+export const Header = ({ tabList, activeTab, setActiveTab }: HeaderProps) => {
   const router = useRouter();
   return (
     <header>
-    <nav className="header">
-      {tabList.map((tab) => (
-        <label className="tab">
+      <nav className="header">
+        {tabList.map((tab, index) => (
+          <label className="tab" key={index}>
             <button
               className={activeTab === tab ? 'tabContent__active' : 'tabContent'}
-              onClick={()=>{
+              onClick={() => {
                 setActiveTab(tab);
                 router.push(`#${tab}`);
               }}>
               {tab}
             </button>
-        </label>
-      ))}
-    </nav>
-  </header>
+          </label>
+        ))}
+      </nav>
+    </header>
   )
 };
